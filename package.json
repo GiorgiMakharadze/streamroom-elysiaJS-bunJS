@@ -1,12 +1,16 @@
 {
-  "name": "video-streamin-elysiaJS-bunJS",
+  "name": "video-streamin-elysiaj-bunjs",
   "version": "1.0.50",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
+    "dev": "bun run --watch src/index.ts",
+    "prod": "bun run dist/server.js",
+    "build": "bun x tsc",
+    "format": "prettier --write \"src/**/*.ts\""
   },
   "dependencies": {
-    "elysia": "latest"
+    "elysia": "latest",
+    "prettier": "^3.5.2"
   },
   "devDependencies": {
     "bun-types": "latest"
