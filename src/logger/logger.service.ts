@@ -57,4 +57,4 @@ export class LoggerService {
   error(message: string, ...args: any[]) {
     this.logger.error({ msg: message, ...args });
   }
-}
+} 
